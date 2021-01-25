@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExpanderXamarin"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms" xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="ExpanderXamarin.MainPage" Padding="{OnPlatform iOS='0,40,0,0'}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ExpanderIconConverter x:Key="ExpanderIconConverter"/>
+            <local:CornerRadiusConverter x:Key="CornerRadiusConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <syncfusion:SfExpander x:Name="expander1" HeaderIconPosition="None">
+                    <syncfusion:SfExpander.Header>
+                        <pancake:PancakeView CornerRadius="{Binding IsExpanded, Source={x:Reference expander1}, Converter={StaticResource CornerRadiusConverter}}" BackgroundColor="#bbbfca" HeightRequest="50">
+                            <Grid>
+                                <Label Text="Veg Pizza" TextColor="#495F6E" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                <Image Margin="10" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="{Binding IsExpanded,Source={x:Reference expander1},Converter={StaticResource ExpanderIconConverter}}"/>
+                            </Grid>
+                        </pancake:PancakeView>
+                    </syncfusion:SfExpander.Header>
+                    <syncfusion:SfExpander.Content>
+                        <pancake:PancakeView CornerRadius="0,0,20,20" BackgroundColor="#dddddd" >
+                            <Grid Padding="10,10,10,10" >
+                                <Label HeightRequest="50" Text="Veg pizza is prepared with the items that meet vegetarian standards by not including any meat or animal tissue products." TextColor="#303030" VerticalTextAlignment="Center"/>
+                            </Grid>
+                        </pancake:PancakeView>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+
+                <syncfusion:SfExpander x:Name="expander2" HeaderIconPosition="None">
+                    <syncfusion:SfExpander.Header>
+                        <pancake:PancakeView CornerRadius="{Binding Path=IsExpanded, Source={x:Reference expander2}, Converter={StaticResource CornerRadiusConverter}}" BackgroundColor="#bbbfca" HeightRequest="50">
+                            <Grid>
+                                <Label Text="Non-veg Pizza" TextColor="#495F6E" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                <Image Margin="10" HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="{Binding IsExpanded, Source={x:Reference expander2},Converter={StaticResource ExpanderIconConverter}}"/>
+                            </Grid>
+                        </pancake:PancakeView>
+                    </syncfusion:SfExpander.Header>
+                    <syncfusion:SfExpander.Content>
+                        <pancake:PancakeView CornerRadius="0,0,20,20" BackgroundColor="#dddddd" >
+                            <Grid Padding="10,10,10,10">
+                                <Label Text="Non-veg pizza is prepared by including the meat and animal tissue products." HeightRequest="50" TextColor="#303030" VerticalTextAlignment="Center"/>
+                            </Grid>
+                        </pancake:PancakeView>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
