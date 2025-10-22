@@ -57,7 +57,8 @@ To learn more about these features, check out the official user guide:
  
 I hope you enjoyed learning about how to to add rounded corners for Xamarin.Forms Expander (SfExpander).
  
-You can refer to our [.NET MAUI DataGrid’s feature tour](https://www.syncfusion.com/maui-controls/maui-datagrid) page to learn about its other groundbreaking feature representations. You can also explore our [.NET MAUI DataGrid Documentation](https://help.syncfusion.com/maui/datagrid/getting-started) to understand how to present and manipulate data. 
-For current customers, you can check out our .NET MAUI components on the [License and Downloads](https://www.syncfusion.com/sales/teamlicense) page. If you are new to Syncfusion, you can try our 30-day [free trial](https://www.syncfusion.com/downloads/maui) to explore our .NET MAUI DataGrid and other .NET MAUI components.
- 
-If you have any queries or require clarifications, please let us know in the comments below. You can also contact us through our [support forums](https://www.syncfusion.com/forums), [Direct-Trac](https://support.syncfusion.com/create) or [feedback portal](https://www.syncfusion.com/feedback/maui?control=sfdatagrid), or the feedback portal. We are always happy to assist you!
+You can refer to our [Xamarin.Forms Expander feature tour page](https://www.syncfusion.com/xamarin-ui-controls/xamarin-expander) to know about its other groundbreaking feature representations and [documentation](https://help.syncfusion.com/xamarin/expander/getting-started), and how to quickly get started for configuration specifications.
+
+For current customers, you can check out our components from the [License and Downloads](https://www.syncfusion.com/sales/ui-component-suite) page. If you are new to Syncfusion, you can try our 30-day [free trial](https://www.syncfusion.com/downloads) to check out our other controls.
+
+If you have any queries or require clarifications, please let us know in the comments section below. You can also contact us through our [support forums](https://www.syncfusion.com/forums/) or [Direct-Trac](https://support.syncfusion.com/create). We are always happy to assist you!
